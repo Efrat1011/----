@@ -40,3 +40,16 @@ function updateCountdown() {
 
 // Update countdown every second
 const countdown = setInterval(updateCountdown, 1000);
+
+
+// document.addEventListener('DOMContentLoaded',()=>{
+
+// let btn = document.getElementById('btn')
+// window.addEventListener("scroll",()=>{
+//   if(window.scrollY>300){
+//     btn.style.display = "block"
+//   }else{
+//     btn.style.display = "none"
+//   }
+// })
+// })

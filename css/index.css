@@ -2,29 +2,48 @@
 
 * {
     margin: 0px;
-    padding: 0px;
+    
 }
 body {
-    background-image: url('https://wallpapercave.com/wp/1I9F3NY.jpg');
-    background-size: 1900px;
-    min-height: 200vh;
+    /* background-image: url('https://wallpapercave.com/wp/1I9F3NY.jpg');
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background-color: rgba(6, 21, 120, 0.699);;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    padding: 0;
-    margin: 0;
+    
+}
+header{
+  background: rgba(0, 13, 132, 0.74);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 h1 {
     font-family: "Tangerine", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 100px;
-    color: white;
+    color: rgb(1, 0, 0);
+}
+.newyear{
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  padding-bottom: 250px;
+  position: relative;
+  bottom: 250px;
 }
   
 
   
   .countdown-container {
     margin-top: 20vh;
+    position: relative;
+    bottom: 1180px;
+    right: 350px;
   }
   
   h1 {
@@ -38,7 +57,15 @@ h1 {
     gap: 20px;
     font-size: 1.5rem;
   }
-  
+  /* .btnstyle{
+    background-color: #002b5b;
+    color: white;
+    border-radius: 20px;
+    position: fixed;
+    position: relative;
+    top: 1200px;
+    left: 93%;
+  } */
   #countdown div {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -137,14 +164,24 @@ header {
   .card p {
     font-size: 1rem;
     font-style: italic;
-    color: #ffffff;
+    color: rgba(1, 1, 247, 0.496);
   }
   .card1{
     position: relative;
     top: 80px;
     font-size: 1rem;
     font-style: italic;
-    color: #ffffff;
+    color: rgba(1, 1, 247, 0.496);
+    
+  }
+  .allbox{
+    position: relative;
+    bottom: 850px;
+  }
+  .sitemebel{
+    width: 94%;
+    height: 600px;
+
     
   }
   .imgg{
@@ -154,11 +191,348 @@ header {
   }
 .text-wish{
     text-align: center;
+    position: relative;
+    bottom: 700px;
     padding-top: 50px;
     font-size: 25px;
-    color: wheat;
+    color: rgba(247, 247, 250, 0.837);
 }
+.afisha{
+  margin: 40px;
+  border: 2px solid rgb(170, 218, 247);
+  height: 250px;
+  text-align: center;
+  background-color: rgb(154, 214, 252);
+}
+.birthday{
+  
+  margin-top: 80px;
+  font-size: 30px;
+  transition-duration: 1s;
+}
+.skidka{
+  margin-top: 20px;
+  font-size: 22px;
+  transition-duration: 1s;
+}
+.akciya{
+  margin-top: 39px;
+  font-size: 15px;
+  color: rgb(78, 76, 76);
+  transition-duration: 1s;
+}
+/* flex қолдандым */
+.mebeli{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: 100px;
+  
+}
+/* анимация транзишин ховер арқылы қолдандым */
+.divan{
+  position: relative;
+  right: 600px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  transition-duration: 1s;
+  
+}
+.divan:hover{
+  transform: scale(1.4 );
+  border-radius: 25px;
+  background-color: antiquewhite;
+  
+}
+.krovat{
+  position: absolute;
+  left: 570px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  transition-duration: 1s;
+  
+}
+.krovat:hover{
+  transform: scale(1.4 );
+  border-radius: 65px;
+  background-color: antiquewhite;
+}
+.garnitura{
+  position: absolute;
+  left: 1070px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  transition-duration: 1s;
+  
+}
+.garnitura:hover{
+  transform: scale(1.4 );
+  border-radius: 55px;
+  background-color: antiquewhite;
+}
+.money{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  color: rgba(0, 0, 127, 0.496);
+  font-weight: bold;
+}
+.cenadivan{
+  color: rgba(0, 0, 127, 0.496);
+  border-radius: 30%;
+  width: 100px;
+  font-style: italic;
+}
+.kat1{
+  padding-left: 42px;
+  font-size: 45px;
+  text-align: center;
+  color:rgba(0, 0, 127, 0.496);
+  font-style: italic;
+}
+.home{
+  font-style: italic;
+  font-size: 40px;
+  color: rgba(0, 0, 127, 0.496);
+}
+iframe{
+  width: 70%;
+  height: 450px;
+  border-radius: 30px;
+  margin-left: 15px;
+}
+/* дисплей грид қолдандым */
+.grid{
+  margin: 70px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 100px 100px 100px;
+  column-gap: 250px;
+  row-gap: 350px;
+}
+.grid1{
+  border: 2px solid rgb(79, 80, 80);
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.txthover{
+  transition-duration: 1s;
+}
+.txthover:hover{
+  color: rgba(0, 0, 127, 0.496);
+  font-style: italic;
+  font-size: 20px;
+}
+@media(max-width:768px){
+  .grid{
+      grid-template-columns: repeat(3,1fr);
+  }
+}
+@media(max-width:576px){
+  .grid{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width:450px){
+  .grid{
+      grid-template-columns: repeat(1,1fr);
+  }
+}
+.novinka{
+  font-size: 30px;
+  text-align: center;
+  margin-right: 150px;
+  font-style: italic;
+  color: rgba(0, 0, 127, 0.496);
+}
+.video1{
+  width: 550px;
+  height: 450px;
+  margin-left: 85px;
+  transition-duration:1s;
+}
+.video1:hover{
+  transform: scale(1.1);
+  
+}
+.video2{
+  width: 550px;
+  height: 450px;
+  margin-left: 85px;
+  transition-duration:1s;
+}
+.video2:hover{
+  transform: scale(1.1);
+}
+.video3{
+  width: 550px;
+  height: 450px;
+  position: relative;
+  left: 40px;
+  transition-duration:1s;
+}
+.video3:hover{
+  transform: scale(1.1);;
+}
+.home{
+ text-align: center;
+}
+.idea1{
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+.hoverfoto{
+  transition: 1s;
+}
+.hoverfoto:hover{
+  transform: scale(1.2);
+}
+.idea2{
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  object-fit: cover;
+}
+.idea3{
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+.idea4{
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  object-fit: cover;
+}
+.paragraph{
+  padding: 80px 100px;
+  text-align: center;
+}
+main{
+  padding-top: 150px;
+}
+.shourumy{
+  text-align: center;
+  flex-basis: auto;
+}
+.h2{
+  font-size: 35px;
+}
+.paragraph1{
+  font-size: 25px;
+}
+.shou1{
+  display: flex;
+  justify-content: space-around;
+  column-gap: 45px;
+  margin-left: 50px;
+}
+.img1{
+  width: 450px;
+  height: 450px;
+  transition-duration: 2s;
+}
+.img1:hover{
+  transform: scale(1.1);
+  border-radius: 25px;
+}
+.img2{
+  width: 450px;
+  height: 450px;
+  transition-duration: 2s;
+}
+.img2:hover{
+  transform: scale(1.1);
+  border-radius: 25px;
+}
+.home1{
+  font-weight: bolder;
+  align-content: center;
+  line-height: 20px;
+  margin-right: 60px;
+  transition-duration: 2s;
+}
+.home1:hover{
+
+  transform: translatey(15%);
+}
+.shou2{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  column-gap: 45px;
+  margin-right: 50px;
+  margin-left: 50px;
+  flex-basis: auto;
+  
+  
+}
+.img3{
+  width: 450px;
+  height: 450px;
+  transition-duration: 2s;
+}
+.img3:hover{
+  transform: scale(1.1);
+  border-radius: 25px;
+}
+.img4{
+  width: 450px;
+  height: 450px;
+  transition-duration: 2s;
+  
+}
+.img4:hover{
+  transform: scale(1.1);
+  border-radius: 25px;
+}
+.home2{
+  font-weight: bolder;
+  align-content: center;
+  line-height: 20px;
+  margin-right: 60px;
+  transition-duration: 2s;
+}
+.home2:hover{
+  transform: translatey(15%);
+}
+.shourumy1{
+  text-align: center      
+  
+}
+.h22{
+  font-size: 35px;
+  text-align: center;
+}
+.paragraph2{
+  font-size: 25px;
+  text-align: center;
+}
+/* Footer */
 .new-year-footer {
+  width: 100%;
     background-color: #002b5b; /* Темно-синий для зимнего настроения */
     color: #ffffff; /* Белый текст */
     text-align: center;
